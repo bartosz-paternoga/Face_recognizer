@@ -1,0 +1,261 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 0px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 55px;
+  padding: 5px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+#reset
+{
+margin-left: 175px;
+
+}
+
+
+#file-container1{
+
+  display: none;
+ 
+}
+
+#text{
+  font-style: italic;
+  display: none;
+
+}
+
+.img { 
+  position:absolute;
+  display: none;
+}
+
+
+
+#overlay
+{
+    position:relative;
+
+}
+
+
+#loading-message {
+  margin-left: 20px ;
+  margin-top: 20px
+  }
+
+
+.sk-cube-grid {
+  width: 100px;
+  height: 100px;
+  margin-left: 200px ;
+  margin-top: 50px
+  }
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: darkred;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font: Courier
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color:darkred;
+}
+
+#container {
+  margin-top: 20px;
+}
+
+#btn1, #btn2 {
+    margin-left: 20px;
+    display: none;
+
+    background-color: lightgray;  
+    border-radius: 10px;
+    color: black;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 12px;
+    cursor:pointer;
+}
+
+#btn_data {
+  margin-left: 40px;
+  display: inline;
+  font:13px Courier;
+
+  background-color: lightgray; 
+  border-radius: 10px;
+  color: black;
+  padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 12px;
+  cursor:pointer;
+}
+
+
+#predictions {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+ #main {
+  margin-left: 40px;
+  display: inline;
+  font:14px Courier;
+ }
+
+ #mainHome {
+  margin-left: 20px;
+  display: inline;
+  font:13px Courier;
+ 
+}
+
+  #start, #end, #lbl, #show {
+  margin-left: 10px;
+  display: inline;
+  font:13px Courier;
+ 
+}
+ #show {
+  margin-left: 40px;
+  display: inline;
+ 
+}
+
+
+th, td, p, input {
+  font:13px Courier;
+}
+table, th, td 
+{
+  margin-left: 40px;
+  border: solid 1px #DDD;
+  border-collapse: collapse;
+  padding: 2px 3px;
+  text-align: left;
+}
+th {
+  font-weight:bold;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2
+}
+
+#input, #text {
+  display: inline
+}
+
+#uploadPreview {
+  background-color: black;
+  width: auto;
+  height: 200px;
+  display: inline-block; /* makes it fit in like an <img> */
+  background-size: cover; /* or contain */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
