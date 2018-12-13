@@ -26,25 +26,28 @@ const Home = () => {
         <div >
            <br/> 
            <pre id = "mainHome">
-            This is a face recognition app. It recognizes person in a webcam using personal face </pre>
+            This is a face recognition app. It recognizes person in a webcam or a phone  using  </pre>
            <br/> <pre id = "mainHome">
-           landmarks. Person's image needs to be uploaded first, so that face desriptotors along  
+           personal face landmarks. Person's image needs to be uploaded first, so that face   
            </pre>
            <br/> <pre id = "mainHome">
-           with a name are stored in a database. This face recognition app uses face-api.js for 
+           desriptotors along with a name are stored in a database. This face recognition app 
            </pre>
            <br/><pre id = "mainHome">
-           ML algorithm, react UI for a frontend, node.js for a backend and mongoDB database.
+           uses face-api.js for ML algorithm, react UI for a frontend, node.js for a backend 
            </pre>
-           <br/><pre id = "mainHome"></pre>
+           <br/><pre id = "mainHome">
+           and mongoDB database.
+           </pre>
+           <br/>
             <br/><pre id = "mainHome">
-           To start face recognition go to the "Data" tab and upload person(s) pics. Then go to
+            To start face recognition go to the "Data" tab and upload person(s) pics. Then go 
            </pre>
            <br/><pre id = "mainHome">
-           'Cam' tab and press 'Start predict', afterwards 'Stop predict'. The AI model needs to
+           to 'Cam' tab and press 'Start predict', afterwards 'Stop predict'. The AI model  
            </pre>
            <br/><pre id = "mainHome">
-           get loaded before you can begin.
+           needs to get loaded before you can begin.
            </pre>
         </div>
     );
