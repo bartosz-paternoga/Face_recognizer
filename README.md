@@ -7,3 +7,6 @@ and mongoDB database.
 To start face recognition go to the "Data" tab and upload person(s) pics. Then go 
 to 'Cam' tab and press 'Start predict', afterwards 'Stop predict'. The AI model 
 needs to get loaded before you can begin.
+
+Live demo:
+https://sleepy-island-64515.herokuapp.com
