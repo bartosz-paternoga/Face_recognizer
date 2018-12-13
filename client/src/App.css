@@ -247,7 +247,8 @@ tr:nth-child(odd) {
 }
 
 #input, #text {
-  display: inline
+  display: inline;
+  margin: 10px
 }
 
 #uploadPreview {
@@ -258,4 +259,32 @@ tr:nth-child(odd) {
   background-size: cover; /* or contain */
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+
+#submitBtn{
+  display: inline;
+  margin-left: 10px
+}
+
+#myUl, #action{
+  background-color: transparent;
+  margin-left: 10px;
+  font:13px Courier;
+
+}
+
+#submitBtn1, #input, #text1 {
+  margin-left: 10px;
+  display: inline;
+
+  background-color: lightgray;  
+  border-radius: 5px;
+  color: black;
+  padding: 2px 15px;
+  text-align: center;
+  text-decoration: none;
+
+  font:12px Courier;
+  cursor:pointer;
 }

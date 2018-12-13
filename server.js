@@ -50,6 +50,38 @@ app.post('/api/datapost', async (request, response) => {
 });
 
 
+app.post('/api/dataremove', async (request, response) => {
+  postBody = await request.body;
+
+  const x = JSON.stringify(postBody);
+  console.log("POSTBODY", x)
+
+  const y =  x.replace(/"|:|{|}/g,'')
+
+  console.log("y", y)
+
+Mong.findOneAndRemove({Name:y},(err,doc)=>{
+     if(err) return console.log(err);
+     console.log(doc)
+})
+
+
+  response.send(postBody);
+
+});
+
+
+app.post('/api/dataRemoveAll', async (request, response) => {
+  
+  Mong.remove({},(err,doc)=>{
+      if(err) return console.log(err);
+      console.log(doc)
+  })
+
+    response.send("all removed");
+
+});
+
 
 
 app.get('/api/data', function(req, res) {

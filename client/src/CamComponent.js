@@ -63,18 +63,14 @@ class faceDetector extends Component {
                 b.shift(); 
                             
                 for (let i = 0; i < b.length; i++) {
-                    const c = b[i].split(",");
-                    console.log(`c ${i}:`,c );
-                     labels.push(c[0])
+                    const c = b[i].split(",");                    
+                     labels.push(c[0]);
                      c.shift();
                      const d = c
-                     console.log(`d ${i}:`,d );
                      const x = new Float32Array(d);
                      values.push(x)
                 }
 
-                console.log("bbbb:",b);
-                // console.log("x:",x);
                 console.log("labesl:",labels);
                 console.log("values:",values);
 
@@ -173,11 +169,17 @@ class faceDetector extends Component {
                       console.log("indexOfMinValue",indexOfMinValue)
                       console.log("name min val",labels[indexOfMinValue])
                       console.log("min value ",results[indexOfMinValue])
-                       
+
                       let pred = document.getElementById("predictions");
                       pred.style.display = 'inline';
-                      pred.innerHTML = ( `Recognized ${labels[indexOfMinValue]} w. eucl. dist ${Math.round((results[indexOfMinValue])* 100) / 100}`);
-                  
+                      const eucled = Math.round((results[indexOfMinValue])* 100) / 100;
+                      if (eucled <= 0.4) {
+                        pred.innerHTML = ( `Recognized ${labels[indexOfMinValue]} w. eucl. dist ${eucled}`);
+                      } else {
+                        pred.innerHTML = ''
+
+                      }
+
                     } catch (error) {
                         console.error(error);
                           }

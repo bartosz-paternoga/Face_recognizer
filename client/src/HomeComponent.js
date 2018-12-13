@@ -26,25 +26,25 @@ const Home = () => {
         <div >
            <br/> 
            <pre id = "mainHome">
-            This webapp is a face detector. Every new face wth euclidean distance > 0.4 is recorded, </pre>
+            This is a face recognition app. It recognizes person in a webcam using personal face </pre>
            <br/> <pre id = "mainHome">
-           with a snapshot sent to ibm cloud storage. Information about date & time, as well as a 
+           landmarks. Person's image needs to be uploaded first, so that face desriptotors along  
            </pre>
            <br/> <pre id = "mainHome">
-           link to the pic in cloud storage is recorded in database. Face detector uses face-api.js  
+           with a name are stored in a database. This face recognition app uses face-api.js for 
            </pre>
            <br/><pre id = "mainHome">
-           for ML algorithm, react UI for a frontend, node.js for a backend and mongoDB database.
+           ML algorithm, react UI for a frontend, node.js for a backend and mongoDB database.
            </pre>
            <br/><pre id = "mainHome"></pre>
             <br/><pre id = "mainHome">
-           To start the face detector go to the 'Cam' tab and press 'Start predict', afterwards 'Stop
+           To start face recognition go to the "Data" tab and upload person(s) pics. Then go to
            </pre>
            <br/><pre id = "mainHome">
-            predict'. The AI model needs to get loaded before you can begin. The logs with the links
+           'Cam' tab and press 'Start predict', afterwards 'Stop predict'. The AI model needs to
            </pre>
            <br/><pre id = "mainHome">
-            to the snapshots of new faces detected can be retrived from dsatabase (tab 'Data'). 
+           get loaded before you can begin.
            </pre>
         </div>
     );
